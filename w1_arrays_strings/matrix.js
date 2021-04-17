@@ -15,9 +15,21 @@ function rotateMatrix(matrix) {
   return rotatedMatrix;
 }
 
-console.log(rotateMatrix([
+console.log(
+  "3x3:",
+  rotateMatrix([
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
+  ])
+);
+
+console.log(
+  "4x4:",
+  rotateMatrix([
+    [0, 1, 2, 3],
+    [4, 5, 6, 7],
+    [8, 9, 10, 11],
+    [12, 13, 14, 15],
   ])
 );

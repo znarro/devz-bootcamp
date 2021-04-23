@@ -39,7 +39,6 @@ class LinkedList {
     while (currentNode) {
       // If is duplicate
       if (setOfData.has(currentNode.data)) {
-        console.log(currentNode.data);
         prevNode.next = currentNode.next;
         // Only update the current node
         currentNode = currentNode.next;
@@ -73,3 +72,14 @@ data2.forEach((item) => llist2.push(item));
 console.log("Initial state:", JSON.stringify(llist2, null, 4));
 llist2.removeDuplicates();
 console.log("Without duplicates:", JSON.stringify(llist2, null, 4));
+
+// Test 3
+const data3 = [1, 1, 1, 1, 1];
+
+const llist3 = new LinkedList();
+
+data3.forEach((item) => llist3.push(item));
+
+console.log("Initial state:", JSON.stringify(llist3, null, 4));
+llist3.removeDuplicates();
+console.log("Without duplicates:", JSON.stringify(llist3, null, 4));

@@ -1,5 +1,6 @@
 /* eslint-disable max-classes-per-file */
 
+// Escribe un programa borre elementos duplicados de un Linked List.
 class Node {
   constructor(data) {
     this.data = data;

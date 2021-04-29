@@ -48,6 +48,10 @@ class Stack {
     }
   }
 
+  peek() {
+    return this.head;
+  }
+
   getMin() {
     return this.min;
   }
@@ -61,4 +65,5 @@ stack1.push(-10);
 console.log("Push test", JSON.stringify(stack1, null, 4));
 stack1.pop();
 console.log("Pop test", JSON.stringify(stack1, null, 4));
+console.log("Peek test:", stack1.peek());
 console.log("GetMin test:", stack1.getMin());

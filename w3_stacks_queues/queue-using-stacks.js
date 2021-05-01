@@ -1,5 +1,8 @@
 /* eslint-disable max-classes-per-file */
 
+// Implementar una cola usando dos pilas.
+// Asumiendo que solo pudieras usar las operaciones de pila, ¿Cómo conseguirías el comportamiento de una cola?
+
 class Node {
   constructor(data = null) {
     this.data = data;

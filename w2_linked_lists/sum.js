@@ -13,10 +13,12 @@ class Node {
 class LinkedList {
   constructor(head = null) {
     this.head = head;
+    this.size = 0;
   }
 
   push(newData) {
     const newNode = new Node(newData);
+    this.size += 1;
 
     if (!this.head) {
       this.head = newNode;
@@ -31,14 +33,7 @@ class LinkedList {
   }
 
   getSize() {
-    let size = 0;
-    let currentNode = this.head;
-
-    while (currentNode) {
-      size += 1;
-      currentNode = currentNode.next;
-    }
-    return size;
+    return this.size;
   }
 }
 
